@@ -8,8 +8,8 @@
         &-item {
             padding: 1.5rem 0;
             text-align: center;
-            border: .1rem solid var(--color-black);
             transition: all .5s;
+            text-transform: uppercase;
 
             &:hover {
                 background-color: var(--color-yellow);

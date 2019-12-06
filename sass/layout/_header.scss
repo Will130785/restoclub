@@ -39,9 +39,17 @@
             padding: 1rem;
             margin: 2rem 0;
             width: 50rem;
+            border: none;
+            border-radius: 10rem;
+            text-align: center;
 
             animation: moveInBottom 2s 2.5s;
             animation-fill-mode: backwards;
+
+            &:focus {
+                width: 60rem;
+                border: none;
+            }
 
         }
     }

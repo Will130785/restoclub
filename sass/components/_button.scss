@@ -1,9 +1,45 @@
-.btn {
+.btn:link,
+.btn:visited {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: 10rem;
+    background-color: var(--color-yellow);
+    color: var(--color-red-dark);
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    animation: moveInBottom 2s 3.5s;
+    animation-fill-mode: backwards;
+    position: relative;
 
-
-    &-main {
-
-        animation: moveInBottom 2s 3.5s;
-        animation-fill-mode: backwards;
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     }
+
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        background-color: var(--color-yellow);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    &:hover::after {
+        transform: scaleX(1.5) scaleY(1.6);
+        opacity: 0;
+    }
+
 }
