@@ -1,0 +1,49 @@
+.header {
+    height: 75vh;
+    background-image: linear-gradient(to right bottom,
+                         rgba(157, 11, 11, 0.8),
+                        rgba(218, 45, 45, 0.6,)),
+                         url("../../img/clay-banks-1Uj0HmqQFGk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color-yellow);
+
+        &--title {
+            font-size: 7rem;
+
+            animation: moveInBottom 2s .5s;
+            animation-fill-mode: backwards;
+
+        }
+
+        &--blurb {
+            font-size: 3rem;
+
+            animation: moveInBottom 2s 1.5s;
+            animation-fill-mode: backwards;
+
+        }
+
+        &--search {
+            font-size: 2rem;
+            padding: 1rem;
+            margin: 2rem 0;
+            width: 50rem;
+
+            animation: moveInBottom 2s 2.5s;
+            animation-fill-mode: backwards;
+
+        }
+    }
+
+}

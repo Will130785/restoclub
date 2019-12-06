@@ -1,0 +1,144 @@
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/*COLORS
+Dark red - #9d0b0b;
+Light red - #da2d2d;
+Orange - #eb8242;
+Yellow - #f6da63;
+*/
+:root {
+  --gutter-width: 6rem;
+  --color-red-dark: #9d0b0b;
+  --color-red-light: #da2d2d;
+  --color-orange: #eb8242;
+  --color-yellow: #f6da63;
+  --color-white: #fff;
+  --color-black: #000; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Oswald', sans-serif; }
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 200; }
+
+.btn-main {
+  animation: moveInBottom 2s 3.5s;
+  animation-fill-mode: backwards; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  background-color: darkgray; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+[class^="col-"] {
+  background-color: orangered;
+  float: left; }
+  [class^="col-"]:not(:last-child) {
+    margin-right: 6rem; }
+
+.col-1-of-2 {
+  width: calc((100% - var(--gutter-width)) / 2); }
+
+.col-1-of-3 {
+  width: calc((100% - 2 * var(--gutter-width)) / 3); }
+
+.col-1-of-4 {
+  width: calc((100% - 3 * var(--gutter-width)) / 4); }
+
+.col-2-of-3 {
+  width: calc(2 *((100% - 2 * var(--gutter-width)) / 3) + var(--gutter-width)); }
+
+.col-2-of-4 {
+  width: calc(2 *((100% - 3 * var(--gutter-width)) / 4) + var(--gutter-width)); }
+
+.col-3-of-4 {
+  width: calc(3 *((100% - 3 * var(--gutter-width)) / 4) + 2 * var(--gutter-width)); }
+
+.sidebar {
+  flex: 18% 0 0;
+  background-color: var(--color-orange);
+  box-shadow: 0 1rem 1rem; }
+  .sidebar .nav-item {
+    padding: 1.5rem 0;
+    text-align: center;
+    border: 0.1rem solid var(--color-black);
+    transition: all .5s; }
+    .sidebar .nav-item:hover {
+      background-color: var(--color-yellow); }
+  .sidebar .nav-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-white); }
+
+.header {
+  height: 75vh;
+  background-image: linear-gradient(to right bottom, rgba(157, 11, 11, 0.8), rgba(218, 45, 45, 0.6)), url("../../img/clay-banks-1Uj0HmqQFGk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .header__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-yellow); }
+    .header__content--title {
+      font-size: 7rem;
+      animation: moveInBottom 2s .5s;
+      animation-fill-mode: backwards; }
+    .header__content--blurb {
+      font-size: 3rem;
+      animation: moveInBottom 2s 1.5s;
+      animation-fill-mode: backwards; }
+    .header__content--search {
+      font-size: 2rem;
+      padding: 1rem;
+      margin: 2rem 0;
+      width: 50rem;
+      animation: moveInBottom 2s 2.5s;
+      animation-fill-mode: backwards; }
+
+.footer {
+  height: 10vh;
+  background-color: var(--color-red-dark); }
+
+.main {
+  padding: 1rem 4rem 2rem 4rem; }
+  .main__header--title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: var(--color-yellow); }
+  .main__content {
+    display: flex;
+    justify-content: space-between; }
+    .main__content--image {
+      width: 30%; }
+      .main__content--image-pic {
+        width: 100%; }
+
+.content {
+  display: flex; }

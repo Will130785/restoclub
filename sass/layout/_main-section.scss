@@ -1,0 +1,37 @@
+.main {
+    padding: 1rem 4rem 2rem 4rem;
+
+    &__header {
+
+
+        &--title {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            color: var(--color-yellow);
+
+        }
+
+        &--paragraph {
+
+
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &--image {
+            width: 30%;
+
+            &-pic {
+                width: 100%;
+
+            }
+        }
+
+    }
+
+
+}

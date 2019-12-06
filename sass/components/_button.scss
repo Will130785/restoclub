@@ -1,0 +1,9 @@
+.btn {
+
+
+    &-main {
+
+        animation: moveInBottom 2s 3.5s;
+        animation-fill-mode: backwards;
+    }
+}

@@ -1,0 +1,35 @@
+/*COLORS
+Dark red - #9d0b0b;
+Light red - #da2d2d;
+Orange - #eb8242;
+Yellow - #f6da63;
+*/
+
+:root {
+    //Grid margin widths
+    --gutter-width: 6rem;
+
+    //Colors
+    --color-red-dark: #9d0b0b;
+    --color-red-light: #da2d2d;
+    --color-orange: #eb8242;
+    --color-yellow: #f6da63;
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+
+//To reset global properties
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; //To set font size to 10px
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
