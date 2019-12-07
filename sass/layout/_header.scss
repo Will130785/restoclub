@@ -21,7 +21,7 @@
         &--title {
             font-size: 7rem;
 
-            animation: moveInBottom 2s .5s;
+            animation: moveInBottom 2s;
             animation-fill-mode: backwards;
 
         }
@@ -29,7 +29,7 @@
         &--blurb {
             font-size: 3rem;
 
-            animation: moveInBottom 2s 1.5s;
+            animation: moveInBottom 2s .5s;
             animation-fill-mode: backwards;
 
         }
@@ -43,7 +43,7 @@
             border-radius: 10rem;
             text-align: center;
 
-            animation: moveInBottom 2s 2.5s;
+            animation: moveInBottom 2s 1s;
             animation-fill-mode: backwards;
 
             &:focus {

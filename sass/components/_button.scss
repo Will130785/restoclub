@@ -1,5 +1,9 @@
-.btn:link,
-.btn:visited {
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+
     font-size: 2rem;
     text-transform: uppercase;
     padding: 1rem 3rem;
@@ -9,7 +13,7 @@
     border: none;
     text-decoration: none;
     display: inline-block;
-    animation: moveInBottom 2s 3.5s;
+    animation: moveInBottom 2s 1.5s;
     animation-fill-mode: backwards;
     position: relative;
 
@@ -41,5 +45,7 @@
         transform: scaleX(1.5) scaleY(1.6);
         opacity: 0;
     }
+
+}
 
 }
