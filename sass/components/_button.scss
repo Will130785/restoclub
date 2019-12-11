@@ -13,8 +13,6 @@
     border: none;
     text-decoration: none;
     display: inline-block;
-    animation: moveInBottom 2s 1.5s;
-    animation-fill-mode: backwards;
     position: relative;
 
     &:hover {
@@ -49,3 +47,8 @@
 }
 
 }
+
+.btn-animated {
+        animation: moveInBottom 2s 1.5s;
+        animation-fill-mode: backwards;
+    }

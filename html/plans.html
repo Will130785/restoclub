@@ -8,9 +8,251 @@
 
      <!-- Custom CSS Stylesheets -->
      <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="css/style.css" type="text/css">
+     <link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
 <body>
-    Plans
+    <!-- Main site container -->
+    <div class="container">
+
+            <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="../video/Date.mp4" type="video/mp4">
+                        <source src="../video/Date.ogv" type="video/ogv">
+                        <source src="../video/Date.webm" type="video/webm">
+                            Your browser is not supported!
+                    </video>
+                </div>
+
+        <!-- header section -->
+        <header class="sub-header">
+            
+            
+        </header>
+
+        <!-- Site content -->
+        <div class="content">
+
+            <!-- Navbar -->
+            <nav class="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plans.html">Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="open-tip-calc" href="#">Tip Calculator</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Main content section -->
+            <main class="main__plans">
+                <h2 class="main__plans--header">Browse our price plans</h2>
+                <div class="main__plans--card">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--one">
+                            &nbsp;
+                        </div>
+                        <h3 class="card__heading">
+                            <span class="card__heading--span card__heading--span-one">Starter Plan</span>
+                        </h3>
+                        <div class="card__details">
+                            <ul>
+                                <li>Lorem ipsum dolor sit</li>
+                                <li>Lorem ipsum dolor sit</li>
+                                <li>Lorem ipsum dolor sit</li>
+                                <li>Lorem ipsum dolor sit</li>
+                                <li>Lorem ipsum dolor sit</li>
+                                <li>Lorem ipsum dolor sit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-one">
+                        <div class="card__back">
+                            <div class="card__price">
+                                <p class="card__price--only">Only</p>
+                                <p class="card__price--value">£150</p>
+                            </div>
+                            <a href="#" class="btn btn-card">Join</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--one">
+                                &nbsp;
+                            </div>
+                            <h3 class="card__heading">
+                                <span class="heading__span heading__span--one">Starter Plan</span>
+                            </h3>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Lorem ipsum dolor sit</li>
+                                    <li>Lorem ipsum dolor sit</li>
+                                    <li>Lorem ipsum dolor sit</li>
+                                    <li>Lorem ipsum dolor sit</li>
+                                    <li>Lorem ipsum dolor sit</li>
+                                    <li>Lorem ipsum dolor sit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-one">
+                            <div class="card__back">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Only</p>
+                                    <p class="card__price-value">£150</p>
+                                </div>
+                                <a href="#" class="btn btn-card">Join</a>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                    <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--one">
+                                    &nbsp;
+                                </div>
+                                <h3 class="card__heading">
+                                    <span class="heading__span heading__span--one">Starter Plan</span>
+                                </h3>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit</li>
+                                        <li>Lorem ipsum dolor sit</li>
+                                        <li>Lorem ipsum dolor sit</li>
+                                        <li>Lorem ipsum dolor sit</li>
+                                        <li>Lorem ipsum dolor sit</li>
+                                        <li>Lorem ipsum dolor sit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-one">
+                                <div class="card__back">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">£150</p>
+                                    </div>
+                                    <a href="#" class="btn btn-card">Join</a>
+                                </div>
+        
+                            </div>
+        
+                            </div>
+                        </div>
+        
+            </main>
+        </div>
+
+        <!-- Tip Calculator Modal -->
+
+        <div class="modal" id="modal">
+            <div class="modal__content">
+                <span class="close">&times;</span>
+                <div class="tip-calc">
+                    <div class="tip-calc__head">
+                        <h3 class="tip-calc__head--title">Tip Calculator</h3>
+                    </div>
+                    <div class="tip-calc__body">
+                        <p class="paragraph -u-tip-calc-para">How much was the bill?</p>
+                        <span class="symbol">£</span><input type="number" id="amount" class="tip-calc__body--input">
+                        <p class="paragraph -u-tip-calc-para">What percentage tip would you like to pay?</p>
+                        <span class="symbol">%</span><input type="number" id="percentage" class="tip-calc__body--input">
+                        <p class="paragraph -u-tip-calc-para">How many people will be splitting the bill?</p>
+                        <span class="symbol">#</span><input type="number" id="split" class="tip-calc__body--input"><br><br>
+                        <button class="tip-calc__body--btn" id="btn">Calculate</button>
+                        <button class="tip-calc__body--btn" id="btn-clr">Clear</button>
+                        <P class="paragraph -u-tip-calc-para" id="output"></P>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer class="footer">
+            
+        </footer>
+    </div>
+
+    <!-- Custom Grid
+    <div class="row">
+        <div class="col-1-of-2">
+            col 1 of 2
+        </div>
+        <div class="col-1-of-2">
+            col 1 of 2
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1-of-3">
+            col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+            col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+            col 1 of 3
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1-of-3">
+            col 1 of 3
+        </div>
+        <div class="col-2-of-3">
+            col 2 of 3
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-2-of-4">
+            col 2 of 4
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-3-of-4">
+            col 3 of 4
+        </div>
+    </div>
+-->
+
+<script src="../js/app.js"></script>
 </body>
 </html>

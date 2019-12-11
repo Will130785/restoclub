@@ -1,0 +1,43 @@
+.main__review {
+
+    &--title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        color: var(--color-yellow);
+
+    }
+
+    &--content {
+        display: flex;
+        align-items: center;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+        padding: 4rem;
+        transform: skewX(-12deg);
+        border-radius: .3rem;
+
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+
+    }
+
+    &--image {
+        height: 15rem;
+        width: 15rem;
+
+        transform: skewX(12deg);
+
+        &-pic {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &--text {
+        margin: 0 2rem;
+        transform: skewX(12deg);
+
+    }
+}

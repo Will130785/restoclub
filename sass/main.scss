@@ -3,13 +3,21 @@
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
+@import "base/utilities";
 
+@import "components/bg-video";
 @import "components/button";
+@import "components/card";
 @import "components/grid";
+@import "components/modal";
 @import "components/navbar";
+@import "components/sub-header";
 
 @import "layout/header";
 @import "layout/footer";
 @import "layout/main-section";
+@import "layout/plans";
+@import "layout/review-main";
 
 @import "pages/home";
+
