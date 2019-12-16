@@ -2,3 +2,15 @@
     font-size: 1.6rem;
     font-weight: 200;
 }
+
+.main__header {
+    margin-bottom: 10rem;
+
+    &--title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        color: var(--color-yellow);
+
+    }
+}

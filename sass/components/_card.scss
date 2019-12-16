@@ -1,55 +1,95 @@
 .card {
-    height: 52rem;
+    perspective: 150rem;
+    width: 25%;
+    position: relative;
+    height: 50rem;
+    display: flex;
+    
 
+    //Hover effext for front of card
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    //Hover effect for back of card
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    //Styling for both sides and child element in order to set to absolute
     &__side {
-
+        height: 50rem;
+        width: 100%;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        box-shadow: 0 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         &--front {
-
+            background-color: var(--color-white);
 
         }
 
         &--back {
-
+            background-color: green;
+            transform: rotateY(180deg);
 
             &-one {
-
+                background-image: linear-gradient(rgb(157, 11, 11),
+                                                    rgb(218, 45, 45));
 
             }
 
             &-two {
-
+                background-image: linear-gradient(rgb(235, 130, 66),
+                                                    rgb(238, 153, 99));
 
             }
 
             &-three {
-
+                background-image: linear-gradient(rgb(246, 218, 99),
+                                                    rgb(247, 228, 144));
 
             }
         }
     }
 
+    //Background immage
     &__picture {
-
+        height: 40%;
+        background-size: cover;
+        background-position: center;
 
         &--one {
-
+            background-image: linear-gradient(rgba(157, 11, 11, .8),
+            rgba(218, 45, 45, .5)),
+             url(../img/brooke-lark-HlNcigvUi4Q-unsplash.jpg);
 
         }
 
         &--two {
-
+            background-image: linear-gradient(rgba(235, 130, 66, .8),
+            rgba(238, 153, 99, .5)),
+             url(../img/abhishek-sanwa-limbu-LR559Dcst70-unsplash.jpg);
 
         }
 
         &--three {
-
+            background-image: linear-gradient(rgba(246, 218, 99, .8),
+            rgba(247, 228, 144, .5)),
+             url(../img/dan-gold-E6HjQaB7UEA-unsplash.jpg);
 
         }
     }
 
     &__heading {
-
+        font-size: 3rem;
+        color: var(--color-yellow);
 
         &--span {
 
@@ -75,13 +115,19 @@
     }
 
     &__details {
-
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        color: var(--color-red-dark);
 
 
     }
 
     &__back {
-
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
 
     }
 
@@ -89,13 +135,13 @@
 
 
         &--only {
-
+            font-size: 3rem;
 
         }
 
         &--value {
-
-
+            font-size: 6rem;
+            font-weight: 700;
         }
     }
 }

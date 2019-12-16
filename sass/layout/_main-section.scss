@@ -1,22 +1,6 @@
 .main {
     padding: 1rem 4rem 2rem 4rem;
 
-    &__header {
-        margin-bottom: 10rem;
-
-        &--title {
-            font-size: 3rem;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-            color: var(--color-yellow);
-
-        }
-
-        &--paragraph {
-
-
-        }
-    }
 
     &__content {
         display: flex;

@@ -1,0 +1,50 @@
+.main__contact {
+    padding: 1rem 4rem 2rem 4rem;
+    width: 100%;
+
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &__form {
+
+
+        &--input {
+            margin: 1rem 0;
+            padding: .5rem;
+            font-size: 2rem;
+            border-radius: 1rem;
+            border: none;
+            background-color: var(--color-grey-light);
+
+            &-fname {
+                width: 49%;
+
+
+            }
+
+            &-lname {
+                width: 49%
+
+
+            }
+
+            &-email {
+                width: 100%;
+
+
+            }
+
+            &-message {
+                width: 100%;
+                height: 10rem;
+
+            }
+        }
+
+    }
+}
