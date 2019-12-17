@@ -1,4 +1,4 @@
-//JavaScript code for modal
+//JavaScript code for tip calculator modal
 
 //Get modal
 const modal = document.querySelector("#modal");
@@ -72,3 +72,51 @@ function clearTip() {
     numPeople.value = ""
     output.textContent = "";
 }; 
+
+//JavaScript for cart
+//UI variables
+//Get cart
+let cart = document.querySelector(".cart");
+
+//Get cart list
+let cartList = document.querySelector(".cart__list");
+
+//Get plan buttons
+let starter = document.querySelector("#starter");
+let advanced = document.querySelector("#advanced");
+let pro = document.querySelector("#pro");
+
+//Get clear button
+let clear = document.querySelector("#clear");
+
+//Event listeners for plan buttons
+starter.addEventListener("click", addToCart);
+advanced.addEventListener("click", addToCart);
+pro.addEventListener("click", addToCart);
+
+//Event listener for clear button
+clear.addEventListener("click", function(e){
+    cartList.innerHTML = "";
+    cart.style.display = "none";
+
+    e.preventDefault();
+})
+
+//Function for adding to cart
+function addToCart(e){
+    cart.style.display = "block";
+
+    let li = document.createElement("li");
+
+    if(e.target === starter){
+        li.textContent = "Starter Plan - £150";
+    } else if(e.target === advanced) {
+        li.textContent = "Advanced Plan - £250";
+    } else {
+        li.textContent = "Professional Plan - £350";
+    }
+
+    cartList.appendChild(li);
+
+    e.preventDefault();
+}
