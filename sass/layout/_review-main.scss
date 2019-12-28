@@ -1,43 +1,89 @@
-.main__review {
+.review {
+    display: flex;
 
-    &--title {
-        font-size: 3rem;
-        text-transform: uppercase;
-        margin-bottom: 2rem;
-        color: var(--color-yellow);
+    &__card {
+        margin: 2rem 1rem;
+        height: 40rem;
+        box-shadow: 0 1rem 1rem;
 
-    }
+        &--head {
+            height: 45%;
+            background-size: cover;
+            background-position: center;
 
-    &--content {
-        display: flex;
-        align-items: center;
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
-        padding: 4rem;
-        transform: skewX(-12deg);
-        border-radius: .3rem;
+            &-1 {
+                background-image: url(../img/review-1.jpg);
 
-        &:not(:last-child) {
-            margin-bottom: 4rem;
+            }
+
+            &-2 {
+                background-image: url(../img/review-2.jpg);
+                
+            }
+
+            &-3 {
+                background-image: url(../img/review-3.jpg);
+                
+            }
+
+            &-4 {
+                background-image: url(../img/review-4.jpg);
+                
+            }
+
+            &-5 {
+                background-image: url(../img/review-5.jpg);
+                
+            }
+
+            &-6 {
+                background-image: url(../img/review-6.jpg);
+                
+            }
+
         }
 
-    }
+        &--body {
+            margin-top: 4rem;
+            text-align: center;
 
-    &--image {
-        height: 15rem;
-        width: 15rem;
-
-        transform: skewX(12deg);
-
-        &-pic {
-            height: 100%;
-            width: 100%;
-            border-radius: 50%;
         }
-    }
 
-    &--text {
-        margin: 0 2rem;
-        transform: skewX(12deg);
+        &--footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+
+            &-pic {
+
+
+            }
+
+            &-stars {
+                
+                &-icon {
+                    height: 2rem;
+                    width: 2rem;
+                    fill: var(--color-red-dark);
+
+                }
+
+            }
+
+            &-ave {
+                font-size: 3rem;
+                color: var(--color-yellow);
+
+            }
+        }
+
 
     }
+}
+
+.user-image {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
 }

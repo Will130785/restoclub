@@ -3,7 +3,6 @@
 .row {
     max-width: 114rem;
     margin: 0 auto;
-    background-color: darkgray;
 
     //To place margin after every row except the last
     &:not(:last-child) {
@@ -19,7 +18,6 @@
 
 //Code for all columns
 [class ^="col-"] {
-    background-color: orangered;
     float: left;
 
     //Margin to right of each column except last

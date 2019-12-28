@@ -5,6 +5,12 @@
 
     .nav {
 
+        &__icon {
+            height: 1.75rem;
+            width: 1.75rem;
+            fill: var(--color-white);
+        }
+
         &-item {
             padding: 1.5rem 0;
             text-align: center;
@@ -45,5 +51,6 @@
             z-index: 10;
 
         }
+
     }
 }

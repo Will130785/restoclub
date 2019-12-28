@@ -19,3 +19,39 @@
 
 
 }
+
+.featured {
+
+
+    &__city {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    &__image {
+    
+
+        &--pic {
+            height: 10rem;
+            width: 10rem;
+            border-radius: 50%;
+
+        }
+    }
+
+    &__text {
+        
+
+        &--title {
+            font-size: 2rem;
+            margin-left: 2rem;
+            color: var(--color-red-light);
+
+        }
+    }
+}

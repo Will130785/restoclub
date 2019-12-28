@@ -22,6 +22,7 @@
     color: var(--color-yellow);
     float: right;
     font-size: 3rem;
+    padding-right: 1rem;
 
     &:hover {
         cursor: pointer;
@@ -35,6 +36,8 @@
     &__head {
         background-color: var(--color-black);
         color: var(--color-yellow);
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
 
         &--title {
             font-size: 3rem;
@@ -46,6 +49,8 @@
     &__body {
         background-color: var(--color-red-dark);
         padding-bottom: 4rem;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
 
         &--input {
             padding: 1rem;
@@ -60,6 +65,7 @@
             border-radius: 10rem;
             font-size: 2rem;
             background-color: var(--color-yellow);
+            margin: 0 1rem;
 
             &:hover {
                 transform: translateY(-.3rem);
