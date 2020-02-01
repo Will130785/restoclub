@@ -1,0 +1,57 @@
+.user-bar {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgb(228, 227, 227);
+    border-bottom: rgb(187, 187, 187);
+    box-shadow: 0 .5rem .5rem;
+
+    &__logo {
+
+
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+
+        &--link,
+        &:link {
+            font-size: 1.3rem;
+            margin-right: 1rem;
+            text-decoration: none;
+            color: var(--color-red-dark);
+
+        }
+
+        &--image {
+
+            &-pic {
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+
+            }
+        }
+
+        &--settings {
+            display: none;
+            position: absolute;
+            right: 2rem;
+            z-index: 20;
+            background-color: rgb(228, 227, 227);
+            border-bottom: rgb(187, 187, 187);
+            padding: 2rem 4rem;
+            box-shadow: 0 .2rem .1rem;
+
+            &-li,
+            &:link {
+                font-size: 1.3rem;
+                color: var(--color-red-dark);
+                text-decoration: none;
+
+            }
+        }
+    }
+}

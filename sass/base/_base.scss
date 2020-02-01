@@ -31,8 +31,17 @@ Yellow - #f6da63;
 
 html {
     font-size: 62.5%; //To set font size to 10px
+
+    @media only screen and (max-width: 900px) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: 500px) {
+        font-size: 40%;
+    }
 }
 
 body {
     font-family: 'Oswald', sans-serif;
 }
+

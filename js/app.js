@@ -1,3 +1,26 @@
+//JavaScript for dropdown menu
+//Get user pic
+const drop = document.querySelector("#drop");
+
+//Get site container
+const site = document.querySelector(".body-content");
+
+//Get dropdown menu
+const menu = document.querySelector("#menu");
+
+//Open dropdown when user clicks user picture
+drop.addEventListener("click", function(){
+    menu.style.display = "block";
+});
+
+//Close dropdown when user clicks
+site.addEventListener("click", function(e){
+    if(e.target !== drop) {
+        menu.style.display = "none";
+    }
+    
+});
+
 //JavaScript code for tip calculator modal
 
 //Get modal

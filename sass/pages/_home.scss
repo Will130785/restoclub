@@ -1,4 +1,8 @@
 .content {
     display: flex;
 
+    @media only screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+
 }
