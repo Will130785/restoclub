@@ -126,7 +126,7 @@ body {
   .card:hover .card__side--back {
     transform: rotateY(0); }
   .card__side {
-    height: 50rem;
+    height: 40rem;
     width: 100%;
     transition: all .8s ease;
     position: absolute;
@@ -481,11 +481,18 @@ body {
   height: 10rem;
   width: 10rem;
   border-radius: 50%; }
+  @media only screen and (max-width: 500px) {
+    .featured__image--pic {
+      height: 7rem;
+      width: 7rem; } }
 
 .featured__text--title {
   font-size: 2rem;
   margin-left: 2rem;
   color: var(--color-red-light); }
+  @media only screen and (max-width: 500px) {
+    .featured__text--title {
+      font-size: 1.6rem; } }
 
 .main__plans {
   width: 100%;
@@ -512,6 +519,9 @@ ul {
     padding-bottom: 10rem;
     height: 40rem;
     box-shadow: 0 1rem 1rem; }
+    @media only screen and (max-width: 900px) {
+      .review__card {
+        padding-bottom: 0; } }
     .review__card--head {
       height: 45%;
       background-size: cover;
