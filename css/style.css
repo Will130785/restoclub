@@ -52,6 +52,9 @@ body {
     text-transform: uppercase;
     margin-bottom: 2rem;
     color: var(--color-yellow); }
+    @media only screen and (max-width: 900px) {
+      .main__header--title {
+        text-align: center; } }
 
 .-u-tip-calc-para {
   font-size: 2rem;
@@ -118,10 +121,6 @@ body {
   height: 50rem;
   display: flex;
   margin-bottom: 4rem; }
-  @media only screen and (max-width: 500px) {
-    .card {
-      width: 100%;
-      margin-bottom: 4rem; } }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -177,6 +176,23 @@ body {
   .card__price--value {
     font-size: 6rem;
     font-weight: 700; }
+  @media only screen and (max-width: 900px), only screen and (hover: none) {
+    .card {
+      width: 100%;
+      margin-bottom: 4rem;
+      height: auto;
+      box-shadow: 0 2rem 2rem; }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          padding-bottom: 2rem; }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__picture {
+        height: 0; } }
 
 .cart {
   display: none;
@@ -232,7 +248,7 @@ body {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 20;
   height: 100%;
   width: 100%;
   left: 0;
@@ -324,6 +340,10 @@ body {
   .sidebar .nav-item:hover::before {
     transform: scaleY(1);
     width: 100%; }
+    @media only screen and (max-width: 900px) {
+      .sidebar .nav-item:hover::before {
+        transform: scaleY(0);
+        width: 0; } }
   .sidebar .nav-link:link, .sidebar .nav-link:visited {
     text-decoration: none;
     font-size: 2rem;
@@ -474,7 +494,7 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: center; }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 900px) {
       .main__plans--card {
         flex-direction: column;
         width: 100%; } }
@@ -489,6 +509,7 @@ ul {
       flex-direction: column; } }
   .review__card {
     margin: 2rem 1rem;
+    padding-bottom: 10rem;
     height: 40rem;
     box-shadow: 0 1rem 1rem; }
     .review__card--head {
@@ -516,11 +537,11 @@ ul {
       align-items: center;
       padding: 1.5rem; }
       .review__card--footer-stars-icon {
-        height: 2rem;
-        width: 2rem;
+        height: 1.8rem;
+        width: 1.8rem;
         fill: var(--color-red-dark); }
       .review__card--footer-ave {
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: var(--color-yellow); }
 
 .user-image {

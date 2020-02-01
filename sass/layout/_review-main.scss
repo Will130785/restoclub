@@ -7,6 +7,7 @@
 
     &__card {
         margin: 2rem 1rem;
+        padding-bottom: 10rem;
         height: 40rem;
         box-shadow: 0 1rem 1rem;
 
@@ -67,8 +68,8 @@
             &-stars {
                 
                 &-icon {
-                    height: 2rem;
-                    width: 2rem;
+                    height: 1.8rem;
+                    width: 1.8rem;
                     fill: var(--color-red-dark);
 
                 }
@@ -76,7 +77,7 @@
             }
 
             &-ave {
-                font-size: 3rem;
+                font-size: 2.5rem;
                 color: var(--color-yellow);
 
             }
