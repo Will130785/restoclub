@@ -1,4 +1,12 @@
 .footer {
-    height: 10vh;
-    background-color: var(--color-red-dark);
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0;
+}
+
+.foot__icon {
+    height: 5rem;
+    width: 5rem;
+    
 }
