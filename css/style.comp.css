@@ -216,6 +216,25 @@ body {
     margin-bottom: 2rem;
     color: var(--color-yellow); }
 
+@media only screen and (min-width: 900px) {
+  .cart {
+    display: none;
+    text-align: center;
+    margin-top: 5rem; }
+    .cart__header {
+      font-size: 2rem;
+      font-weight: 200;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      color: var(--color-red-dark); }
+    .cart__list {
+      list-style: none;
+      font-size: 1.6rem;
+      font-weight: 200;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      color: var(--color-yellow); } }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
