@@ -5,20 +5,20 @@
 
     &__header {
         font-size: 2rem;
+        font-weight: 200;
         text-transform: uppercase;
         margin-bottom: 2rem;
         color: var(--color-red-dark);
-        text-shadow: 0 .5rem .5rem rgb(0, 0, 0);
 
     }
 
     &__list {
         list-style: none;
         font-size: 1.6rem;
+        font-weight: 200;
         padding: 1.5rem;
         margin-bottom: 2rem;
         color: var(--color-yellow);
-        text-shadow: 0 .5rem .5rem rgb(0, 0, 0);
 
     }
 }

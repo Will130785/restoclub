@@ -8,5 +8,10 @@
 .foot__icon {
     height: 5rem;
     width: 5rem;
+
+    @media only screen and(max-width: 500px){
+        height: 4rem;
+        width: 4rem;
+    }
     
 }

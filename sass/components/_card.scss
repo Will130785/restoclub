@@ -91,6 +91,7 @@
 
     &__heading {
         font-size: 3rem;
+        font-weight: 200;
         color: var(--color-yellow);
 
         &--span {
@@ -118,6 +119,7 @@
 
     &__details {
         font-size: 1.6rem;
+        font-weight: 200;
         margin-bottom: 2rem;
         color: var(--color-red-dark);
 
@@ -138,12 +140,13 @@
 
         &--only {
             font-size: 3rem;
+            font-weight: 200;
 
         }
 
         &--value {
             font-size: 6rem;
-            font-weight: 700;
+            font-weight: 200;
         }
     }
 
