@@ -9,14 +9,19 @@ let ui = new UI();
 
 //Handle data
 document.querySelector("#searchBtn").addEventListener("click", () => {
+    //Capture data from search
     restaurant.changeLocation(searchInput.value);
+    //make http request and handle the result
     restaurant.getRestaurant()
     .then(result => {
     console.log(result);
+    //Display result in UI
     ui.displayResult(result);
+    //Clear search input
     searchInput.value = "";
 
 })
+.catch(err => console.log(err));
 
 
 });

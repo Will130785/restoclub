@@ -1,37 +1,51 @@
+//HTTP request result styling
 .http-result {
-}
 
-.http-result__card {
+    //Overall restaurant card style
+        &__card {
     
-    width: 30%;
-    margin: 5rem 2rem 5rem 0;
-    float: left;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.6);
-
-    &--head {
-        height: 20rem;
-    }
-
-    &--body {
-        height: 20rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-    }
+            width: 30%;
+            margin: 5rem 2rem 5rem 0;
+            float: left;
+            box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.6);
+        
+            //Card styling for mobile phone screens
+            @media only screen and (max-width: 500px) {
+                width: 100%;
+            }
+        
+            //Styling for photo
+            &--head {
+                height: 20rem;
+            }
+        
+            //Styling for restaurant details
+            &--body {
+                min-height: 20rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem;
+            }
+        
+        }
 
 }
 
+
+//Picture dimensions
 .rest-pic {
     width: 100%;
     height: 100%;
 }
 
-.test {
+//Container for header and http request results
+.header-http-container {
     display: flex;
     flex-direction: column;
 }
 
+//Restaurant name
 .r-name {
     font-size: 2rem;
     color: var(--color-red-dark);
@@ -39,12 +53,14 @@
 
 }
 
+//Restaurant location
 .r-location {
     font-size: 1.4rem;
     margin-bottom: 2rem;
 
 }
 
+//Restaurant rating
 .r-rating {
     font-size: 2rem;
     color: var(--color-yellow);

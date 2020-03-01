@@ -6,7 +6,7 @@ class Restaurant {
     }
 
     async getRestaurant(){
-        const response = await fetch(`https://developers.zomato.com/api/v2.1/search?entity_type=city&q=${this.location}`, {
+        const response = await fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=61&entity_type=city&q=${this.location}`, {
             "method": "GET",
             "headers": {
                 "user-key": "32655ce31c3429efdd2fce55960d7e05"
