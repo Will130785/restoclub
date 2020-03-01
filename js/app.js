@@ -1,3 +1,32 @@
+//JavaScript for HTTP request
+//Grab search input
+const searchInput = document.querySelector("#searchInput");
+//init restaurant object
+let restaurant = new Restaurant();
+
+//init UI
+let ui = new UI();
+
+//Handle data
+document.querySelector("#searchBtn").addEventListener("click", () => {
+    restaurant.changeLocation(searchInput.value);
+    restaurant.getRestaurant()
+    .then(result => {
+    console.log(result);
+    ui.displayResult(result);
+    searchInput.value = "";
+
+})
+
+
+});
+
+//Clear search reults
+document.querySelector("#clearResultBtn").addEventListener("click", () => {
+    ui.result.innerHTML = "";
+})
+
+
 //JavaScript for dropdown menu
 //Get user pic
 const drop = document.querySelector("#drop");

@@ -44,6 +44,7 @@
                 </figure>
             </div>
         </nav>
+        
 
         <!-- Header Section -->
         <header class="header">
@@ -53,11 +54,12 @@
                     Restoclub
                 </h1>
                 <p class="header__content--blurb">Welcome to Restoclub</p>
-                <input class="header__content--search" type="text" placeholder="Search 1000's of restaurants"><br>
-                <a href="#" class="btn btn-animated">Search</a>
+                <input id="searchInput" class="header__content--search" type="text" placeholder="Search restaurants by area"><br>
+                <a href="#" id="searchBtn" class="btn btn-animated">Search</a><a href="#" id="clearResultBtn" class="btn btn-animated">Clear results</a>
             </div>
-            
-        </header>
+
+            </header>
+        
 
         <!-- Site content -->
         <div class="content">
@@ -110,7 +112,23 @@
             </nav>
 
             <!-- Main content section -->
+
             <main class="main">
+            <div class="test">
+                <!-- http request result section -->
+            <div class="http-result">
+                <!-- <div class="http-result__card">
+                    <div class="http-result__card--head">
+
+                    </div>
+                    <div class="http-result__card--body">
+                        <p class="r-name"></p>
+                        <p class="r-location"></p>
+                        <p class="r-rating"></p>
+                    </div>
+                </div> -->
+            </div>
+
                 <div class="main__header">
                     <h2 class="main__header--title">
                         The next level of dining out
@@ -157,6 +175,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <div class="main__content">
                     <div class="main__content--image">
                         <img class="main__content--image-pic" src="img/amirali-mirhashemian-UH-fIND9svQ-unsplash.jpg">
@@ -288,7 +307,8 @@
         </div>
     </div>
 -->
-
+<script src="js/restoapi.js"></script>
+<script src="js/ui.js"></script>
 <script src="js/app.js"></script>
 
 </body>

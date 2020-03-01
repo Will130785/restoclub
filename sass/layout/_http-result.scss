@@ -1,0 +1,52 @@
+.http-result {
+}
+
+.http-result__card {
+    
+    width: 30%;
+    margin: 5rem 2rem 5rem 0;
+    float: left;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.6);
+
+    &--head {
+        height: 20rem;
+    }
+
+    &--body {
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+}
+
+.rest-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+}
+
+.r-name {
+    font-size: 2rem;
+    color: var(--color-red-dark);
+    margin-bottom: 2rem;
+
+}
+
+.r-location {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+
+}
+
+.r-rating {
+    font-size: 2rem;
+    color: var(--color-yellow);
+
+}
